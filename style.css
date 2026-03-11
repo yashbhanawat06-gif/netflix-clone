@@ -1,0 +1,691 @@
+html {
+    background-color: black;
+}
+
+@font-face {
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url(assets/images/netlflix\ bg\ main.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    top: 0%;
+}
+
+nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+nav img {
+    width: 144px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative; 
+    z-index: 10;
+}
+
+.text> :nth-child(1) {
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 900;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: rgb(255, 255, 255);
+    gap: 25px;
+}
+
+.text> :nth-child(2) {
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 900;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    gap: 25px;
+}
+
+.text> :nth-child(3) {
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    gap: 10px;
+}
+
+.text> :nth-child(4) {
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    gap: 30px;
+}
+
+.text :nth-child(5) {
+    font-style: normal;
+    font-size: 50px;
+    line-height: 45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.text input {
+    padding: 20px 200px 15px 20px;
+    font-weight: 900;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgb(23, 23, 23, 0.69);
+    border: 1px solid rgba(68, 68, 68, 0.714);
+    color: white;
+}
+
+.btn-red-gs {
+    padding: 15px 50px 15px 50px;
+    background-color: red;
+    color: white;
+}
+
+.btn-red-gs:hover {
+    cursor: pointer;
+    background-color: rgb(199, 24, 24);
+}
+
+.btn {
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-red-si {
+    padding: 10px 24px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+}
+
+.btn-red-si:hover {
+    cursor: pointer;
+    background-color: rgb(199, 24, 24);
+}
+
+.btn-eng {
+    padding: 10px 24px;
+    background-color: rgb(11, 11, 11);
+    color: white;
+    font-size: 14px;
+}
+
+.form-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box {
+    padding: 250px 0px 0px 0px;
+}
+
+.curve-container {
+    height: 8px;
+    width: 100%;
+    background-color: red;
+    box-sizing: border-box;
+}
+
+.Trending {
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    padding: 15px 150px;
+    background-color: black;
+}
+
+.slider {
+    position: relative;
+    padding: 15px 160px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.slider img {
+    position: relative;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.number {
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    position: relative;
+    color: rgb(0, 0, 0);
+    bottom: -55px;
+    left: -210px;
+    font-size: 100px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+    cursor: pointer;
+}
+
+.reasons {
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    padding: 60px 150px 0px 140px;
+    background-color: black;
+}
+
+.slider img:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: transform;
+}
+
+.number:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    padding: 20px 135px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.more1 {
+    width: 294.2px;
+    height: 273.6px;
+    background: linear-gradient(180deg, #1e1e3f 50%, #220222 100%);
+    border-radius: 1rem;
+    gap: 10px;
+}
+
+.more2 {
+    width: 294.2px;
+    height: 273.6px;
+    background: linear-gradient(180deg, #1e1e3f 50%, #220222 100%);
+    border-radius: 1rem;
+    gap: 10px;
+}
+
+.more3 {
+    width: 294.2px;
+    height: 273.6px;
+    background: linear-gradient(180deg, #1e1e3f 50%, #220222 100%);
+    border-radius: 1rem;
+    gap: 10px;
+}
+
+.more4 {
+    width: 294.2px;
+    height: 273.6px;
+    background: linear-gradient(180deg, #1e1e3f 50%, #220222 100%);
+    border-radius: 1rem;
+    gap: 10px;
+}
+
+.more1 :nth-child(1) {
+    display: flex;
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    color: white;
+    padding: 25px 15px;
+}
+
+.more1 :nth-child(2) {
+    display: flex;
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.596);
+    padding: 0px 15px;
+}
+
+.more1 img {
+    padding: 40px 200px;
+    position: relative;
+}
+
+.more2 :nth-child(1) {
+    display: flex;
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    color: white;
+    padding: 25px 15px;
+}
+
+.more2 :nth-child(2) {
+    display: flex;
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.596);
+    padding: 0px 15px;
+}
+
+.more2 img {
+    padding: 30px 200px;
+    position: relative;
+}
+
+.more3 :nth-child(1) {
+    display: flex;
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    color: white;
+    padding: 25px 15px;
+}
+
+.more3 :nth-child(2) {
+    display: flex;
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.596);
+    padding: 0px 15px;
+}
+
+.more3 img {
+    padding: 40px 200px;
+    position: relative;
+}
+
+.more4 :nth-child(1) {
+    display: flex;
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    color: white;
+    padding: 25px 15px;
+}
+
+.more4 :nth-child(2) {
+    display: flex;
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.596);
+    padding: 0px 15px;
+}
+
+.more4 img {
+    padding: 20px 185px;
+    position: relative;
+}
+
+.faq {
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 40px 0px 0px 0px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.question1 {
+    width: 1224.8px;
+    height: 84px;
+    background-color: #2d2d2d;
+}
+
+.question1:hover {
+    cursor: pointer;
+    background-color: #413f3f;
+}
+
+.question1 :nth-child(1) {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    display: flex;
+    padding: 26px 0px 0px 25px;
+}
+
+.plus1 :nth-child(1) {
+    padding: 0px 0px 0px 975px;
+}
+
+.question2 {
+    width: 1224.8px;
+    height: 84px;
+    background-color: #2d2d2d;
+}
+
+.question2:hover {
+    cursor: pointer;
+    background-color: #413f3f;
+}
+
+.question2 :nth-child(1) {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    display: flex;
+    padding: 26px 0px 0px 25px;
+}
+
+.plus2 :nth-child(1) {
+    padding: 0px 0px 0px 832px;
+}
+
+.question3 {
+    width: 1224.8px;
+    height: 84px;
+    background-color: #2d2d2d;
+}
+
+.question3:hover {
+    cursor: pointer;
+    background-color: #413f3f;
+}
+
+.question3 :nth-child(1) {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    display: flex;
+    padding: 26px 0px 0px 25px;
+}
+
+.plus3 :nth-child(1) {
+    padding: 0px 0px 0px 929px;
+}
+
+.question4 {
+    width: 1224.8px;
+    height: 84px;
+    background-color: #2d2d2d;
+}
+
+.question4:hover {
+    cursor: pointer;
+    background-color: #413f3f;
+}
+
+.question4 :nth-child(1) {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    display: flex;
+    padding: 26px 0px 0px 25px;
+}
+
+.plus4 :nth-child(1) {
+    padding: 0px 0px 0px 957px;
+}
+
+.question5 {
+    width: 1224.8px;
+    height: 84px;
+    background-color: #2d2d2d;
+}
+
+.question5:hover {
+    cursor: pointer;
+    background-color: #413f3f;
+}
+
+.question5 :nth-child(1) {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    display: flex;
+    padding: 26px 0px 0px 25px;
+}
+
+.plus5 :nth-child(1) {
+    padding: 0px 0px 0px 837px;
+}
+
+.question6 {
+    width: 1224.8px;
+    height: 84px;
+    background-color: #2d2d2d;
+}
+
+.question6:hover {
+    cursor: pointer;
+    background-color: #413f3f;
+}
+
+.question6 :nth-child(1) {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    display: flex;
+    padding: 26px 0px 0px 25px;
+}
+
+.plus6 :nth-child(1) {
+    padding: 0px 0px 0px 891px;
+}
+
+.membership {
+    font-family: "NetflixSans-Bold";
+    src: url(assets/fonts/NetflixSans-Bold\ \(1\).otf);
+    position: relative;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.foot input{
+    padding: 20px 300px 15px 20px;
+    font-weight: 900;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgb(23, 23, 23, 0.69);
+    border: 1px solid rgba(68, 68, 68, 0.714);
+    color: white;
+}
+
+.foot{
+    padding: 15px 0px 50px 400px;
+}
+
+.create{
+    position: relative;
+    top: 275px;
+}
+
+.call p{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0px 0px 0px 135px;
+}
+
+.call a{
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.foot-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 1224.8px;
+    height: 142px;
+}
+
+.footer{
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px 0px 0px 140px;
+}
+
+.footer-eng{
+    padding: 100px 50px 0px 140px;
+}
+
+.footer-para{
+    position: relative;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 35px 140px;
+}
+
+.footer-end span{
+    position: relative;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 35px 0px 140px 140px;
+}
+
+.footer-end a{
+    color: rgb(68, 148, 244);
+}
